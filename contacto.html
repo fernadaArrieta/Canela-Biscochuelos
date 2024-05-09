@@ -22,5 +22,70 @@
         <a href="./productos.html">Productos</a>
       </div>
     </nav>
+    <main>
+      <h3 style="text-align: center; margin-top: 20px; color: #4a5759">
+        Contactanos
+      </h3>
+      <div class="contenedor-form">
+        <form action="./show_data.html" method="get">
+          <fieldset>
+            <legend>Nombre y Apellido:</legend>
+            <label for="nombre"><span style="color: red">*</span></label>
+            <input
+              required
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Pepito Juarez"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Edad:</legend>
+            <label>
+              <input
+                name="edad"
+                type="number"
+                max="100"
+                min="1"
+                placeholder="1-100"
+              />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Fecha de nacimiento:</legend>
+            <label>
+              <input type="date" name="" id="" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Email <span style="color: red">*</span></legend>
+            <input type="email" name="email" />
+            <!-- <label>
+                Email:
+            </label> -->
+          </fieldset>
+          <select
+            name="nacionalidad"
+            id="nacionalidad"
+            style="margin-top: 10px; background-color: #dedbd2"
+          >
+            <option value="" disabled selected>Nacionalidad...</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+          </select>
+          <fieldset>
+            <legend>Dejanos tu consulta:</legend>
+            <label for="mensaje"></label>
+            <textarea name="mensaje" id=""></textarea>
+          </fieldset>
+          <div class="cont-input">
+            <input type="submit" value="Enviar datos" class="input-btn" />
+          </div>
+        </form>
+        <h5><span style="color: red">*</span> Estos campos son obligatorios</h5>
+      </div>
+    </main>
   </body>
 </html>
