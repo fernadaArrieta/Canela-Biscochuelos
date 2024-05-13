@@ -94,6 +94,10 @@ textarea{
     border-radius: 3px;
     overflow: hidden;
 }
+.info-enviada{
+    display:flex;
+    flex-direction: column;
+}
 footer{
     background-color: #F7E1D7;
    display: flex;
