@@ -123,3 +123,9 @@ footer{
     align-items:center;
     justify-content: space-around;
 }
+
+.nosotros{  
+    background-image: url(fotoNosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
