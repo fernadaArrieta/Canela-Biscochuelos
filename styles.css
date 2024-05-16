@@ -129,9 +129,11 @@ footer{
 }
 
 .nosotros{  
-    background-image: url(fotoNosotros.jpg);
-    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    position: relative;
     background-position: center;
+<<<<<<< Updated upstream
 }
 .card-container{
     width: 100%;
@@ -169,3 +171,15 @@ footer{
     color:#4A5759;
     margin-top: 2rem;
 }
+=======
+    
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+   
+}
+>>>>>>> Stashed changes
