@@ -31,7 +31,11 @@
         Contactanos
       </h3>
       <div class="contenedor-form">
-        <form action="./show_data.html" method="get">
+        <form
+          onsubmit="return validar()"
+          action="./show_data.html"
+          method="get"
+        >
           <fieldset>
             <legend>Nombre y Apellido:</legend>
             <label for="nombre"><span style="color: red">*</span></label>
@@ -52,6 +56,7 @@
                 max="100"
                 min="1"
                 placeholder="1-100"
+                id="edad"
               />
             </label>
           </fieldset>
@@ -63,7 +68,7 @@
           </fieldset>
           <fieldset>
             <legend>Email <span style="color: red">*</span></legend>
-            <input type="email" name="email" />
+            <input type="email" name="email" id="email" />
             <!-- <label>
                 Email:
             </label> -->
@@ -111,6 +116,8 @@
         <i class="fab fa-twitter"></i>
         <i class="fab fa-instagram"></i>
       </div>
+      <ul id="mensajes"></ul>
     </footer>
   </body>
+  <!-- <script src="./main.js"></script> -->
 </html>
