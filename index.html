@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -18,8 +19,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/icons/forward?f=classic&s=solid"
+    />
 
     <link rel="stylesheet" href="./styles.css" />
+   
   </head>
   <body>
     <nav>
@@ -31,7 +37,17 @@
         <a href="./productos.html">Productos</a>
       </div>
     </nav>
-    <main></main>
+    <main>
+      <article class="article-carrusel">
+        <div class="article-carrusel__div">
+            <button class="atras" onclick="imgAnt()"><img src="https://fontawesome.com/icons/forward?f=classic&s=solid" alt="anterior"></button>
+            <img src="img/BizRectangular2.png" alt="" id="foto-carrusel">            
+            <button class="siguiente" onclick="imgSig()"><img src="https://fontawesome.com/icons/backward?f=classic&s=solid" alt="siguiente"></button>
+        </div>
+      </article>
+
+
+    </main>
     <footer>
       <div>
         <p style="text-align: center">Encontranos en:</p>
@@ -53,5 +69,6 @@
         <i class="fab fa-instagram"></i>
       </div>
     </footer>
+    
   </body>
 </html>
