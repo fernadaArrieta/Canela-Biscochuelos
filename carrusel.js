@@ -1,8 +1,4 @@
-var imagenes = [
-    "img/BizRectangular2.png",
-    "/img/BizChoco.png",
-    "/img/BizRectangular.png"
-];
+var imagenes = ["/img/BizRectangular2.png","/img/BizChoco.png","/img/BizRectangular.png"];
 var cont = 0;
 
 function imgAnt () {
