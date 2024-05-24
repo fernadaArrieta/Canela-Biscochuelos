@@ -40,15 +40,15 @@ nav img{
 a:visited{
 background-color: #B0C4B1;
 }
-/* .cont-logo{
-    flex-basis: 100px;
-} */
+.boton-nav a:hover{
+    background-color: #edafb8;
+}
+
+
 main{
     width: 100%;
 }
-/* img{
-    margin-left: 5px;
-} */
+
 
 .contenedor-form{
 display: flex;
@@ -189,6 +189,23 @@ img {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;   
+}
+.cont-btnNos{
+    display:flex;
+    justify-content: center;
+}
+.btn-nosotros{
+    margin: 5px;
+    text-decoration: none;
+    background-color: #DEDBD2;
+    box-shadow: 0px .5px 1px 0px black ;
+    border-radius: 3px;
+    padding:2px 8px 2px 8px;
+    color: #4A5759;
+
+}
+.btn-nosotros:hover{
+    background-color: #edafb8;
 }
 
 /*carrucel*/
