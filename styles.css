@@ -116,6 +116,13 @@ textarea{
     display:flex;
     flex-direction: column;
 }
+.color-rojo{
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    color: red;
+}
+
 footer{
     background-color: #F7E1D7;
    display: flex;

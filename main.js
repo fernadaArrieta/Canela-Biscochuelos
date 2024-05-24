@@ -3,7 +3,7 @@ function validar(event) {
   let nombre = document.getElementById("nombre").value;
   let edad = document.getElementById("edad").value;
   let email = document.getElementById("email").value;
-
+  let mostrarErrores = document.getElementById("errores");
   let errores = [];
 
   if (nombre.length === "") {
@@ -23,16 +23,22 @@ function validar(event) {
     }
   }
   if (errores.length > 0) {
-    mostrarErrores(errores);
-    console.log(mostrarErrores(errores));
+    console.log(errores);
+    const spanError = document.createElement("span");
+    spanError.textContent = errores.join(" ");
+    spanError.className = "color-rojo";
+    mostrarErrores.insertAdjacentElement("afterend", spanError);
+    console.log(spanError);
+
+    /* mostrarErrores(errores); */
+    //console.log(mostrarErrores(errores));
     return false;
   }
   mostrarMensaje(nombre, edad, email);
   limpiarFormulario();
   return false;
 }
-
-function mostrarErrores(errores) {
+/* function mostrarErrores(errores) {
   let erroresDiv = document.querySelector(".error");
   if (!erroresDiv) {
     erroresDiv = document.createElement("div");
@@ -40,8 +46,7 @@ function mostrarErrores(errores) {
     document.body.insertBefore(erroresDiv, document.querySelector("form"));
   }
   erroresDiv.innerHTML = errores.join("<br >");
-}
-
+} */
 function mostrarMensaje(nombre, edad, email) {
   let mensajesUl = document.getElementById("mensajes");
   let mensajeLi = document.createElement("li");

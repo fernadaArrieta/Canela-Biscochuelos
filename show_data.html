@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Datos de Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="info-enviada"><p align="center">&nbsp;</p>
+      <h1 align="center">
+        <font size="+1">La Información enviada fué:</font>
+      </h1>
+  
+      <table border="1" align="center" width="226">
+        <tr>
+          <th align="center">Columna:</th>
+          <th align="center">Valor:</th>
+        </tr>
+        <a href="./index.html"
+        > <i class="fas fa-arrow-left"></i>
+        Volver al Inicio </a>
+      </div>
+    
+
+      <script language="javascript">
+        let args = location.search.substr(1).split("&");
+        for (let i = 0; i < args.length; ++i) {
+          let parts = args[i].split("=");
+          if (parts != null) {
+            let field = parts[0];
+            let value = parts[1];
+            if (value == null) {
+              value = "null";
+            } else {
+              value = '"' + unescape(value.replace(/\+/g, " ")) + '"';
+            }
+
+            document.writeln('<tr><td align="center">' + field + "</td>");
+            document.writeln('<td align="center">' + value + "</td></tr>");
+          }
+        }
+      </script>     
+    </table>
+  </body>
+</html>
