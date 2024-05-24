@@ -31,16 +31,11 @@
         Contactanos
       </h3>
       <div class="contenedor-form">
-        <form
-          onsubmit="return validar()"
-          action="./show_data.html"
-          method="get"
-        >
+        <form onsubmit="return validar(event)">
           <fieldset>
             <legend>Nombre y Apellido:</legend>
             <label for="nombre"><span style="color: red">*</span></label>
             <input
-              required
               type="text"
               name="nombre"
               id="nombre"
@@ -50,14 +45,7 @@
           <fieldset>
             <legend>Edad:</legend>
             <label>
-              <input
-                name="edad"
-                type="number"
-                max="100"
-                min="1"
-                placeholder="1-100"
-                id="edad"
-              />
+              <input name="edad" type="number" placeholder="1-100" id="edad" />
             </label>
           </fieldset>
           <fieldset>
@@ -94,6 +82,7 @@
           </div>
         </form>
         <h5><span style="color: red">*</span> Estos campos son obligatorios</h5>
+        <ul id="mensajes"></ul>
       </div>
     </main>
     <footer>
@@ -119,5 +108,5 @@
       <ul id="mensajes"></ul>
     </footer>
   </body>
-  <!-- <script src="./main.js"></script> -->
+  <script src="./main.js"></script>
 </html>
