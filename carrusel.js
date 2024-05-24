@@ -1,9 +1,12 @@
-var imagenes = [
-  "./img/BizRectangular2.png",
+let imagenes = [
+  "./img/BizRectangular5.png",
   "./img/BizChoco.png",
   "./img/BizRectangular.png",
+  "./img/BizRedondo.png",
+  "./img/BizRedondo2.png",
+  "./img/BizRectangular4.png",
 ];
-var cont = 0;
+let cont = 0;
 
 function imgAnt() {
   if (cont > 0) {
@@ -22,6 +25,6 @@ function imgSig() {
   fotoactual();
 }
 function fotoactual() {
-  var contimg = document.getElementById("foto-carrusel");
+  let contimg = document.getElementById("foto-carrusel");
   contimg.src = imagenes[cont];
 }

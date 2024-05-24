@@ -225,10 +225,10 @@ img {
   }
 
   #foto-carrusel{
-    max-width: 400px;
+    
     min-width: 400px;
     max-height: 400px;
-    min-height: 400px;
+    
   }
   
   .article-carrusel__div button{
@@ -239,6 +239,7 @@ img {
 
   .article-carrusel__div button img{
     width: 70px;
+    color: #4A5759;
   }
 
   .article-carrusel__div button img:hover{
